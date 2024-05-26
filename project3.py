@@ -22,7 +22,7 @@ def find_subsequence_locations_in_fasta(file_path):
             match.start() + 1 for match in re.finditer(pattern, sequence)]
     print("matches", matches)
     return matches
-fasta_file_path = "/Users/vinayjagtiani/Code/Coding4Medicine/Project 3/fasta.txt"
+fasta_file_path = "./fasta.txt"
 subsequence_locations = find_subsequence_locations_in_fasta(fasta_file_path)
 print("subsequence_locations", subsequence_locations)
 for header, locations in subsequence_locations.items():
